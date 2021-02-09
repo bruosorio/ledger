@@ -1,0 +1,22 @@
+image:
+  file: .gitpod.Dockerfile
+
+ports:
+  - port: 8080
+    onOpen: open-preview
+
+tasks:
+  - init: 
+      pip install -r requirements.txt
+    command: 
+      python manage.py runserver 0.0.0.0:8080
+    
+vscode:
+  extensions:
+    # SQLite:
+    - alexcvzz.vscode-sqlite@0.9.0:zd8ThD/lTpdSq0fXjP1QIw==
+
+github:
+  prebuilds:
+    # enable for the master/default branch (defaults to true)
+    master: true
