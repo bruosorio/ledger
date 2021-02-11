@@ -25,7 +25,7 @@ SECRET_KEY = 'o+d_!$+)v3n0i1ihmx25hldn(4d*7!bo-d-^03_#3ri(x$)@e6'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -38,6 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'ledger.core',
+    'polymorphic',
+    'django_extensions',
 ]
 
 MIDDLEWARE = [

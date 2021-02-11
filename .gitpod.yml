@@ -17,6 +17,8 @@ vscode:
     # postgres
     - ckolkman.vscode-postgres@1.1.17:gE0nzV6f9gqMRqOHQT6cvw==
 
+    - alexcvzz.vscode-sqlite@0.10.1:m5L+iEIP/9wJYy5L2XCVlQ==
+
 github:
   prebuilds:
     # enable for the master/default branch (defaults to true)
